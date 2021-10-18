@@ -99,3 +99,39 @@ Output
     "isFrozen": "0"
   }}</code></pre>
 <br>
+
+
+
+# **Get OrderBook Method:**
+
+The ticker endpoint is to provide a 24-hour pricing and volume summary for each market pair available on the exchange.
+
+* Request Url  : **https://api.asbazar.com/orderbook/{Market_Pair}**
+* Request Type : **GET**
+* Signature required : **No**
+* Filters : **YES** **https://api.asbazar.com/orderbook/btc_usdt**
+
+Output 
+<pre><code class="json">{  
+   "timestamp":"1634592347000",
+   "bids":[[  
+         "0.0000321",
+         "100365.76323988"
+      ],[  
+         "0.000049",
+         "3633896.04"
+      ],[  
+         "0.000049",
+         "243001.037464"
+      ]],
+   "asks":[[  
+         "0.0000321",
+         "100365.76323988"
+      ],[  
+         "0.000049",
+         "3633896.04"
+      ],[  
+         "0.000049",
+         "243001.037464"
+      ]]}</code></pre>
+<br>
