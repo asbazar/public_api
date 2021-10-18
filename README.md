@@ -47,7 +47,7 @@ The assets endpoint is to provide a detailed summary for each currency available
 * Request Url  : **https://api.asbazar.com/assets**
 * Request Type : **GET**
 * Signature required : **No**
-* Filters : **YES** **https://api.asbazar.com/assets/btc**
+* Filters : **YES**  ||  **https://api.asbazar.com/assets/btc**
 
 Output 
 <pre><code class="json">{"BTC":{
@@ -80,7 +80,7 @@ The ticker endpoint is to provide a 24-hour pricing and volume summary for each 
 * Request Url  : **https://api.asbazar.com/ticker**
 * Request Type : **GET**
 * Signature required : **No**
-* Filters : **YES** **https://api.asbazar.com/ticker/btc**
+* Filters : **YES**  ||  **https://api.asbazar.com/ticker/btc**
 
 Output 
 <pre><code class="json">{"BTC_USDT":{
@@ -109,7 +109,7 @@ The order book endpoint is to provide a complete level 2 order book (arranged by
 * Request Url  : **https://api.asbazar.com/orderbook/{Market_Pair}**
 * Request Type : **GET**
 * Signature required : **No**
-* Filters : **YES** **https://api.asbazar.com/orderbook/btc_usdt**
+* Filters : **YES**  ||  **https://api.asbazar.com/orderbook/btc_usdt**
 
 Output 
 <pre><code class="json">{  
@@ -145,7 +145,7 @@ The trades endpoint is to return data on all recently completed trades for a giv
 * Request Url  : **https://api.asbazar.com/trades/{Market_Pair}**
 * Request Type : **GET**
 * Signature required : **No**
-* Filters : **YES** **https://api.asbazar.com/trades/btc_usdt**
+* Filters : **YES**  ||  **https://api.asbazar.com/trades/btc_usdt**
 
 Output 
 <pre><code class="json">[   
