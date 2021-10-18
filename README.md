@@ -4,6 +4,8 @@ In This webservice you get AsBazar Exchange public data by open api
 
 # **Get All Tickers Method:**
 
+The summary endpoint is to provide an overview of market data for all tickers and all market pairs on the exchange.
+
 * Request Url  : **https://api.asbazar.com/tickers/all**
 * Request Type : **GET**
 * Signature required : **No**
@@ -40,6 +42,8 @@ Output
 
 # **Get Assets Method:**
 
+The assets endpoint is to provide a detailed summary for each currency available on the exchange.
+
 * Request Url  : **https://api.asbazar.com/assets**
 * Request Type : **GET**
 * Signature required : **No**
@@ -67,3 +71,31 @@ Output
   }}</code></pre>
 <br>
 
+
+
+# **Get Ticker Method:**
+
+The ticker endpoint is to provide a 24-hour pricing and volume summary for each market pair available on the exchange.
+
+* Request Url  : **https://api.asbazar.com/ticker**
+* Request Type : **GET**
+* Signature required : **No**
+* Filters : **YES** **https://api.asbazar.com/ticker/btc**
+
+Output 
+<pre><code class="json">{"BTC_USDT":{
+    "base_id": "1",
+    "quote_id": "2",
+    "last_price": "61389.34",
+    "base_volume": "0",
+    "quote_volume": "0",
+    "isFrozen": "0"
+  },"ASB_USDT":{
+    "base_id": "4",
+    "quote_id": "2",
+    "last_price": "0.4739",
+    "base_volume": "157.58514455",
+    "quote_volume": "74.6796",
+    "isFrozen": "0"
+  }}</code></pre>
+<br>
