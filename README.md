@@ -104,7 +104,7 @@ Output
 
 # **Get OrderBook Method:**
 
-The ticker endpoint is to provide a 24-hour pricing and volume summary for each market pair available on the exchange.
+The order book endpoint is to provide a complete level 2 order book (arranged by best asks/bids) with full depth returned for a given market pair.
 
 * Request Url  : **https://api.asbazar.com/orderbook/{Market_Pair}**
 * Request Type : **GET**
@@ -134,4 +134,28 @@ Output
          "0.000049",
          "243001.037464"
       ]]}</code></pre>
+<br>
+
+
+
+# **Get Last Trade Method:**
+
+The trades endpoint is to return data on all recently completed trades for a given market pair.
+
+* Request Url  : **https://api.asbazar.com/trades/{Market_Pair}**
+* Request Type : **GET**
+* Signature required : **No**
+* Filters : **YES** **https://api.asbazar.com/trades/btc_usdt**
+
+Output 
+<pre><code class="json">[   
+   {         
+      "trade_id":3523643,
+      "price":"0.01",
+      "base_volume":"569000",
+      "quote_volume":"0.01000000",
+      "timestamp":"‭1585177482652‬",
+      "type":"sell"
+   }
+]</code></pre>
 <br>
